@@ -1,0 +1,20 @@
+{
+    "opcionesSeguro": [
+      { "nombre": "Básico", "factorPrecio": 1.1 },
+      { "nombre": "Completo", "factorPrecio": 1.25 },
+      { "nombre": "Premium", "factorPrecio": 1.4 }
+    ],
+    "marcasAutos": [
+      { "nombre": "Toyota", "precioBase": 5000 },
+      { "nombre": "Chevrolet", "precioBase": 5500 },
+      { "nombre": "Renault", "precioBase": 6000 },
+      { "nombre": "Otra", "precioBase": 6500 }
+    ],
+    "descuentoAnio": {
+      "limiteInferior": 2000,
+      "limiteSuperior": 2010,
+      "descuento": 1000,
+      "incremento": 2000
+    }
+  }
+  

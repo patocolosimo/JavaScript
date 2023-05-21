@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cotización de Seguros de Autos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-image">
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-md-8">
+            <h1>Cotiza tu seguro de auto</h1>
+            <p class="lead">
+              Protege tu vehículo y a ti mismo con nuestro seguro de autos
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Cotiza ahora</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-4">
+      <h2 class="fw-bold mb-4">Cotizador de Seguros de Autos</h2>
+      <form action="#" method="POST">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="marca" class="form-label">Marca del vehículo:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="marca"
+                name="marca"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="modelo" class="form-label"
+                >Modelo del vehículo:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="modelo"
+                name="modelo"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="año" class="form-label">Año del vehículo:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="año"
+                name="año"
+                min="1900"
+                max="2030"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="valor" class="form-label">Valor del vehículo:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="valor"
+                name="valor"
+                min="0"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="correo"
+                name="correo"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefono"
+                name="telefono"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">
+          Obtener cotización
+        </button>
+      </form>
+
+      <h2 class="fw-bold mb-4">Opciones de Cobertura</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Cobertura</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Deducible</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cobertura Básica</th>
+              <td>
+                Incluye responsabilidad civil y protección contra daños a
+                terceros.
+              </td>
+              <td>$5,000</td>
+              <td>$500/mes</td>
+            </tr>
+            <tr>
+              <th scope="row">Cobertura Amplia</th>
+              <td>
+                Incluye responsabilidad civil, protección contra daños a
+                terceros y cobertura contra robo y daños al vehículo.
+              </td>
+              <td>$2,000</td>
+              <td>$800/mes</td>
+            </tr>
+            <tr>
+              <th scope="row">Cobertura Premium</th>
+              <td>
+                Incluye responsabilidad civil, protección contra daños a
+                terceros, cobertura contra robo y daños al vehículo, asistencia
+                en el camino y auto sustituto.
+              </td>
+              <td>$1,000</td>
+              <td>$1,200/mes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="fw-bold mb-4">Cotizador de Seguros de Autos</h2>
+      <form action="#" method="post">
+        <div class="mb-3">
+          <label for="marca" class="form-label">Marca del vehículo</label>
+          <select class="form-select" id="marca" name="marca" required>
+            <option value="" selected disabled>Seleccione una opción</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Nissan">Nissan</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="modelo" class="form-label">Modelo del vehículo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="modelo"
+            name="modelo"
+            placeholder="Ingrese el modelo del vehículo"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="anio" class="form-label">Año del vehículo</label>
+          <input
+            type="number"
+            class="form-control"
+            id="anio"
+            name="anio"
+            min="1900"
+            max="2099"
+            step="1"
+            value="2022"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="tipo" class="form-label">Tipo de cobertura</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipo"
+              id="basica"
+              value="basica"
+              checked
+            />
+            <label class="form-check-label" for="basica">
+              Cobertura Básica
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipo"
+              id="amplia"
+              value="amplia"
+            />
+            <label class="form-check-label" for="amplia">
+              Cobertura Amplia
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipo"
+              id="premium"
+              value="premium"
+            />
+            <label class="form-check-label" for="premium">
+              Cobertura Premium
+            </label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="correo"
+            name="correo"
+            placeholder="Ingrese su correo electrónico"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono de contacto</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="telefono"
+            name="telefono"
+            placeholder="Ingrese su teléfono de contacto"
+            required
+          />
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Cotizar</button>
+        </div>
+      </form>
+      <h2 class="fw-bold mb-4">Resultados de la cotización</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Marca</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">Año</th>
+              <th scope="col">Tipo de cobertura</th>
+              <th scope="col">Costo anual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Toyota</td>
+              <td>Corolla</td>
+              <td>2022</td>
+              <td>Cobertura Básica</td>
+              <td>$12,000</td>
+            </tr>
+            <tr>
+              <td>Ford</td>
+              <td>Mustang</td>
+              <td>2021</td>
+              <td>Cobertura Amplia</td>
+              <td>$15,500</td>
+            </tr>
+            <tr>
+              <td>Chevrolet</td>
+              <td>Camaro</td>
+              <td>2020</td>
+              <td>Cobertura Premium</td>
+              <td>$18,200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 class="fw-bold mb-4">Cotizar seguro de auto</h2>
+      <form>
+        <div class="mb-3">
+          <label for="marca" class="form-label">Marca del auto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="marca"
+            name="marca"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="modelo" class="form-label">Modelo del auto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="modelo"
+            name="modelo"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="año" class="form-label">Año del auto</label>
+          <input
+            type="number"
+            class="form-control"
+            id="año"
+            name="año"
+            min="1900"
+            max="2023"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="cobertura" class="form-label">Tipo de cobertura</label>
+          <select class="form-select" id="cobertura" name="cobertura" required>
+            <option value="">Selecciona una opción</option>
+            <option value="basica">Cobertura Básica</option>
+            <option value="amplia">Cobertura Amplia</option>
+            <option value="premium">Cobertura Premium</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Cotizar</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Contáctanos</h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Dirección: Calle 1122
+              </li>
+              <li><i class="fas fa-phone"></i> Teléfono: (+54) 15-2222-2200</li>
+              <li>
+                <i class="fas fa-envelope"></i> Correo electrónico:
+                info@miaseguradora.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Redes sociales</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Servicios</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Seguro de auto</a></li>
+              <li><a href="#">Seguro de motocicletas</a></li>
+              <li><a href="#">Seguro de casa</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">
+          © 2023. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
