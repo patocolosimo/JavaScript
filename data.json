@@ -1,24 +1,30 @@
-[
-  { "id": 1, "nombre": "Toyota" },
-  { "id": 2, "nombre": "Ford" },
-  { "id": 3, "nombre": "Chevrolet" },
-  { "id": 4, "nombre": "Honda" },
-  { "id": 5, "nombre": "Volkswagen" },
-  { "id": 6, "nombre": "BMW" },
-  { "id": 7, "nombre": "Mercedes-Benz" },
-  { "id": 8, "nombre": "Audi" },
-  { "id": 9, "nombre": "Nissan" },
-  { "id": 10, "nombre": "Hyundai" },
-  { "id": 11, "nombre": "Kia" },
-  { "id": 12, "nombre": "Mazda" },
-  { "id": 13, "nombre": "Subaru" },
-  { "id": 14, "nombre": "Lexus" },
-  { "id": 15, "nombre": "Volvo" },
-  { "id": 16, "nombre": "Jeep" },
-  { "id": 17, "nombre": "Mitsubishi" },
-  { "id": 18, "nombre": "Porsche" },
-  { "id": 19, "nombre": "Ferrari" },
-  { "id": 20, "nombre": "Lamborghini" }
-]
+{
+  "coberturas": [
+    {
+      "nombre": "Responsabilidad Civil",
+      "descripcion": "Cubre los daños a terceros en caso de accidente.",
+      "deducible": "$5,000",
+      "precio": "$500/mes"
+    },
+    {
+      "nombre": "Cobertura contra Colisiones",
+      "descripcion": "Cubre los daños a tu vehículo en caso de colisión.",
+      "deducible": "$2,000",
+      "precio": "$800/mes"
+    },
+    {
+      "nombre": "Protección contra Robo",
+      "descripcion": "Cubre el robo de tu vehículo o daños por intento de robo.",
+      "deducible": "$1,000",
+      "precio": "$600/mes"
+    },
+    {
+      "nombre": "Asistencia en Carretera",
+      "descripcion": "Brinda asistencia en caso de avería, pinchazos, remolque, etc.",
+      "deducible": "No aplica",
+      "precio": "$300/mes"
+    }
+  ]
+}
 
   

@@ -1,5 +1,5 @@
 .bg-image {
-  background-image: url(images/cda1.jpg) ;
+  background-image: url(images/cda1.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -9,8 +9,8 @@ header.bg-image h1 {
   color: #ffffff;
 }
 
-header.bg-image p{
-    color: rgb(0, 70, 103);
+header.bg-image p {
+  color: rgb(0, 70, 103);
 }
 
 h1 {
@@ -51,40 +51,97 @@ h1 {
   }
 }
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 3rem 0;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  ul li a {
-    color: #fff;
-  }
-  
-  ul li a:hover {
-    text-decoration: none;
-    color: #369bf9;
-  }
-  
-  hr {
-    border-color: #fff;
-  }
-  
-  p.text-center {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 3rem 0;
+}
 
-  .container .dropdown-toggle {
-    margin: 20px 0px 50px ;
-  }
-  
-  
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li a {
+  color: #fff;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: #369bf9;
+}
+
+hr {
+  border-color: #fff;
+}
+
+p.text-center {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
+select {
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type='submit'],
+.btn-primary {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.select {
+  margin: 0px 0px 25px;
+}
+.cobertura-container {
+  padding: 20px;
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+.table-sm td,
+.table-sm th {
+  padding: 0.3rem;
+}
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #dee2e6;
+}
+.table-dark {
+  color: inherit;
+}
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+  border-color: #dee2e6;
+}

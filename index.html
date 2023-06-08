@@ -50,32 +50,11 @@
         compromiso.
       </p>
       <h2 class="fw-bold mb-4">Cotizador de Seguros de Autos</h2>
-      <div class="container mt-5">
-        <div class="dropdown d-flex justify-content-center align-items-center">
-          <button
-            class="btn btn-primary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Modelos Adheridos
-          </button>
-          <div
-            class="dropdown-menu"
-            aria-labelledby="dropdownMenuButton"
-            id="dropdownOptions"
-          ></div>
-        </div>
-      </div>
 
-      <div class="container mt-5">
+      <div class="container mt-5 select">
         <label for="modelo">Modelo de auto:</label>
         <select id="modelo" class="form-control"></select>
       </div>
-      
-      
 
       <form id="cotizacionForm">
         <div class="row">
@@ -251,6 +230,12 @@
           </tbody>
         </table>
       </div>
+
+      <h2 class="fw-bold mb-4">Seguros Adicionales:</h2>
+      
+      <div id="cobertura-container"></div>
+
+
     </main>
     <footer>
       <div class="container">
