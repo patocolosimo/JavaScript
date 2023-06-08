@@ -20,9 +20,9 @@ form.addEventListener("submit", function (event) {
   calcularCotizacion();
 });
 
-const dropdownOptions = document.getElementById("dropdownOptions");
+const selectModelo = document.getElementById("modelo");
 
-
+// Datos del JSON
 const data = [
   { "id": 1, "nombre": "Toyota" },
   { "id": 2, "nombre": "Ford" },
@@ -46,14 +46,15 @@ const data = [
   { "id": 20, "nombre": "Lamborghini" }
 ];
 
-
+// Generar las opciones del select
 data.forEach(item => {
-  const option = document.createElement("a");
-  option.classList.add("dropdown-item");
-  option.href = "#";
+  const option = document.createElement("option");
+  option.value = item.id;
   option.textContent = item.nombre;
-  dropdownOptions.appendChild(option);
+  selectModelo.appendChild(option);
 });
+
+
 
 
 
