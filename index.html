@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-
-</head>
   </head>
   <body>
     <header class="bg-image">
@@ -30,26 +28,51 @@
     </header>
 
     <main class="container py-4">
-      <p class="text-center">¡Bienvenido a nuestra página de cotizaciones de seguros de autos! <br> Protege tu vehículo con nuestra amplia gama de opciones de seguros diseñadas para brindarte tranquilidad y seguridad en la carretera. Nuestro objetivo es ofrecerte la mejor cobertura al mejor precio.
-
-        En nuestra plataforma de cotizaciones en línea, puedes obtener fácilmente una cotización personalizada para tu automóvil en solo unos pocos pasos simples. Ingresa los detalles de tu vehículo, como la marca, modelo y año, y nuestro sistema calculará el precio del seguro basado en estos factores.
-        
-        Nuestro equipo de expertos en seguros está comprometido en ayudarte a encontrar la cobertura adecuada que se ajuste a tus necesidades y presupuesto. Trabajamos con las principales compañías de seguros para ofrecerte una amplia variedad de opciones y poder brindarte un seguro de calidad.
-        
-        Además de ofrecer una cotización rápida y precisa, también brindamos información valiosa sobre los diferentes tipos de cobertura disponibles, incluyendo responsabilidad civil, cobertura contra colisiones, protección contra robos, asistencia en carretera y más. Nuestro objetivo es proporcionarte una visión clara y completa de tus opciones para que puedas tomar una decisión informada.
-        
-        No importa si eres un conductor nuevo o experimentado, tenemos opciones de seguros para todos. Nuestro proceso de cotización es rápido, transparente y sin compromiso. </p>
+      <p class="text-center">
+        ¡Bienvenido a nuestra página de cotizaciones de seguros de autos! <br />
+        Protege tu vehículo con nuestra amplia gama de opciones de seguros
+        diseñadas para brindarte tranquilidad y seguridad en la carretera.
+        Nuestro objetivo es ofrecerte la mejor cobertura al mejor precio. En
+        nuestra plataforma de cotizaciones en línea, puedes obtener fácilmente
+        una cotización personalizada para tu automóvil en solo unos pocos pasos
+        simples. Ingresa los detalles de tu vehículo, como la marca, modelo y
+        año, y nuestro sistema calculará el precio del seguro basado en estos
+        factores. Nuestro equipo de expertos en seguros está comprometido en
+        ayudarte a encontrar la cobertura adecuada que se ajuste a tus
+        necesidades y presupuesto. Trabajamos con las principales compañías de
+        seguros para ofrecerte una amplia variedad de opciones y poder brindarte
+        un seguro de calidad. Además de ofrecer una cotización rápida y precisa,
+        también brindamos información valiosa sobre los diferentes tipos de
+        cobertura disponibles, incluyendo responsabilidad civil, cobertura
+        contra colisiones, protección contra robos, asistencia en carretera y
+        más. Nuestro objetivo es proporcionarte una visión clara y completa de
+        tus opciones para que puedas tomar una decisión informada. No importa si
+        eres un conductor nuevo o experimentado, tenemos opciones de seguros
+        para todos. Nuestro proceso de cotización es rápido, transparente y sin
+        compromiso.
+      </p>
       <h2 class="fw-bold mb-4">Cotizador de Seguros de Autos</h2>
       <div class="container mt-5">
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="dropdown d-flex justify-content-center align-items-center">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             Modelos Adheridos
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownOptions">
-          </div>
+          <div
+            class="dropdown-menu"
+            aria-labelledby="dropdownMenuButton"
+            id="dropdownOptions"
+          ></div>
         </div>
       </div>
-    
+      
+
       <form id="cotizacionForm">
         <div class="row">
           <div class="col-md-6">
@@ -132,9 +155,14 @@
             </div>
           </div>
         </div>
-        <input type="submit" value="Obtener Cotización" class="btn btn-primary mt-3"/>
+        <input
+          type="submit"
+          value="Obtener Cotización"
+          class="btn btn-primary mt-3"
+        />
         <div>
-          <span> El valor de la cotización es: </span><span id="precio-cotizacion"></span>
+          <span> El valor de la cotización es: </span
+          ><span id="precio-cotizacion"></span>
         </div>
       </form>
 
@@ -219,7 +247,6 @@
           </tbody>
         </table>
       </div>
-     
     </main>
     <footer>
       <div class="container">
@@ -261,9 +288,7 @@
           </div>
         </div>
         <hr />
-        <p class="text-center">
-          © 2023. Todos los derechos reservados.
-        </p>
+        <p class="text-center">© 2023. Todos los derechos reservados.</p>
       </div>
     </footer>
 

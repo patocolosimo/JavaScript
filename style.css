@@ -82,4 +82,9 @@ footer {
     margin-top: 2rem;
     font-size: 0.8rem;
   }
+
+  .container .dropdown-toggle {
+    margin: 20px 0px 50px ;
+  }
+  
   

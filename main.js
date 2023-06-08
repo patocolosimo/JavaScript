@@ -20,26 +20,41 @@ form.addEventListener("submit", function (event) {
   calcularCotizacion();
 });
 
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.log('Error:', error);
-  });
+const dropdownOptions = document.getElementById("dropdownOptions");
 
-  $(document).ready(function() {
-    $.getJSON('data.json', function(data) {
-      var dropdownOptions = $('#dropdownOptions');
-  
-      data.forEach(function(opcion) {
-        var optionLink = $('<a>').addClass('dropdown-item').attr('href', '#').text(opcion.nombre);
-        dropdownOptions.append(optionLink);
-      });
-    });
-  });
-  
+
+const data = [
+  { "id": 1, "nombre": "Toyota" },
+  { "id": 2, "nombre": "Ford" },
+  { "id": 3, "nombre": "Chevrolet" },
+  { "id": 4, "nombre": "Honda" },
+  { "id": 5, "nombre": "Volkswagen" },
+  { "id": 6, "nombre": "BMW" },
+  { "id": 7, "nombre": "Mercedes-Benz" },
+  { "id": 8, "nombre": "Audi" },
+  { "id": 9, "nombre": "Nissan" },
+  { "id": 10, "nombre": "Hyundai" },
+  { "id": 11, "nombre": "Kia" },
+  { "id": 12, "nombre": "Mazda" },
+  { "id": 13, "nombre": "Subaru" },
+  { "id": 14, "nombre": "Lexus" },
+  { "id": 15, "nombre": "Volvo" },
+  { "id": 16, "nombre": "Jeep" },
+  { "id": 17, "nombre": "Mitsubishi" },
+  { "id": 18, "nombre": "Porsche" },
+  { "id": 19, "nombre": "Ferrari" },
+  { "id": 20, "nombre": "Lamborghini" }
+];
+
+
+data.forEach(item => {
+  const option = document.createElement("a");
+  option.classList.add("dropdown-item");
+  option.href = "#";
+  option.textContent = item.nombre;
+  dropdownOptions.appendChild(option);
+});
+
 
 
     
