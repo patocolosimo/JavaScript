@@ -1,20 +1,24 @@
-{
-    "opcionesSeguro": [
-      { "nombre": "Básico", "factorPrecio": 1.1 },
-      { "nombre": "Completo", "factorPrecio": 1.25 },
-      { "nombre": "Premium", "factorPrecio": 1.4 }
-    ],
-    "marcasAutos": [
-      { "nombre": "Toyota", "precioBase": 5000 },
-      { "nombre": "Chevrolet", "precioBase": 5500 },
-      { "nombre": "Renault", "precioBase": 6000 },
-      { "nombre": "Otra", "precioBase": 6500 }
-    ],
-    "descuentoAnio": {
-      "limiteInferior": 2000,
-      "limiteSuperior": 2010,
-      "descuento": 1000,
-      "incremento": 2000
-    }
-  }
+[
+  { "id": 1, "nombre": "Toyota" },
+  { "id": 2, "nombre": "Ford" },
+  { "id": 3, "nombre": "Chevrolet" },
+  { "id": 4, "nombre": "Honda" },
+  { "id": 5, "nombre": "Volkswagen" },
+  { "id": 6, "nombre": "BMW" },
+  { "id": 7, "nombre": "Mercedes-Benz" },
+  { "id": 8, "nombre": "Audi" },
+  { "id": 9, "nombre": "Nissan" },
+  { "id": 10, "nombre": "Hyundai" },
+  { "id": 11, "nombre": "Kia" },
+  { "id": 12, "nombre": "Mazda" },
+  { "id": 13, "nombre": "Subaru" },
+  { "id": 14, "nombre": "Lexus" },
+  { "id": 15, "nombre": "Volvo" },
+  { "id": 16, "nombre": "Jeep" },
+  { "id": 17, "nombre": "Mitsubishi" },
+  { "id": 18, "nombre": "Porsche" },
+  { "id": 19, "nombre": "Ferrari" },
+  { "id": 20, "nombre": "Lamborghini" }
+]
+
   

@@ -10,7 +10,7 @@ header.bg-image h1 {
 }
 
 header.bg-image p{
-    color: black;
+    color: rgb(0, 70, 103);
 }
 
 h1 {
@@ -71,7 +71,7 @@ footer {
   
   ul li a:hover {
     text-decoration: none;
-    color: #f9c136;
+    color: #369bf9;
   }
   
   hr {

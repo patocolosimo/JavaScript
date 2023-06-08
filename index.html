@@ -9,6 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+</head>
   </head>
   <body>
     <header class="bg-image">
@@ -26,7 +30,26 @@
     </header>
 
     <main class="container py-4">
+      <p class="text-center">¡Bienvenido a nuestra página de cotizaciones de seguros de autos! <br> Protege tu vehículo con nuestra amplia gama de opciones de seguros diseñadas para brindarte tranquilidad y seguridad en la carretera. Nuestro objetivo es ofrecerte la mejor cobertura al mejor precio.
+
+        En nuestra plataforma de cotizaciones en línea, puedes obtener fácilmente una cotización personalizada para tu automóvil en solo unos pocos pasos simples. Ingresa los detalles de tu vehículo, como la marca, modelo y año, y nuestro sistema calculará el precio del seguro basado en estos factores.
+        
+        Nuestro equipo de expertos en seguros está comprometido en ayudarte a encontrar la cobertura adecuada que se ajuste a tus necesidades y presupuesto. Trabajamos con las principales compañías de seguros para ofrecerte una amplia variedad de opciones y poder brindarte un seguro de calidad.
+        
+        Además de ofrecer una cotización rápida y precisa, también brindamos información valiosa sobre los diferentes tipos de cobertura disponibles, incluyendo responsabilidad civil, cobertura contra colisiones, protección contra robos, asistencia en carretera y más. Nuestro objetivo es proporcionarte una visión clara y completa de tus opciones para que puedas tomar una decisión informada.
+        
+        No importa si eres un conductor nuevo o experimentado, tenemos opciones de seguros para todos. Nuestro proceso de cotización es rápido, transparente y sin compromiso. </p>
       <h2 class="fw-bold mb-4">Cotizador de Seguros de Autos</h2>
+      <div class="container mt-5">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Modelos Adheridos
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownOptions">
+          </div>
+        </div>
+      </div>
+    
       <form id="cotizacionForm">
         <div class="row">
           <div class="col-md-6">
@@ -159,110 +182,7 @@
         </table>
       </div>
 
-      <h2 class="fw-bold mb-4">Cotizador de Seguros de Autos</h2>
-      <form action="#" method="post">
-        <div class="mb-3">
-          <label for="marca" class="form-label">Marca del vehículo</label>
-          <select class="form-select" id="marca" name="marca" required>
-            <option value="" selected disabled>Seleccione una opción</option>
-            <option value="Toyota">Toyota</option>
-            <option value="Ford">Ford</option>
-            <option value="Chevrolet">Chevrolet</option>
-            <option value="Nissan">Nissan</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="modelo" class="form-label">Modelo del vehículo</label>
-          <input
-            type="text"
-            class="form-control"
-            id="modelo"
-            name="modelo"
-            placeholder="Ingrese el modelo del vehículo"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="anio" class="form-label">Año del vehículo</label>
-          <input
-            type="number"
-            class="form-control"
-            id="anio"
-            name="anio"
-            min="1900"
-            max="2099"
-            step="1"
-            value="2022"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="tipo" class="form-label">Tipo de cobertura</label>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="tipo"
-              id="basica"
-              value="basica"
-              checked
-            />
-            <label class="form-check-label" for="basica">
-              Cobertura Básica
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="tipo"
-              id="amplia"
-              value="amplia"
-            />
-            <label class="form-check-label" for="amplia">
-              Cobertura Amplia
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="tipo"
-              id="premium"
-              value="premium"
-            />
-            <label class="form-check-label" for="premium">
-              Cobertura Premium
-            </label>
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="correo" class="form-label">Correo electrónico</label>
-          <input
-            type="email"
-            class="form-control"
-            id="correo"
-            name="correo"
-            placeholder="Ingrese su correo electrónico"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="telefono" class="form-label">Teléfono de contacto</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="telefono"
-            name="telefono"
-            placeholder="Ingrese su teléfono de contacto"
-            required
-          />
-        </div>
-        <div class="d-grid">
-          <button type="submit" class="btn btn-primary">Cotizar</button>
-        </div>
-      </form>
-      <h2 class="fw-bold mb-4">Resultados de la cotización</h2>
+      <h2 class="fw-bold mb-4">Cotizaciones más buscadas:</h2>
       <div class="table-responsive">
         <table class="table table-striped">
           <thead>
@@ -299,53 +219,7 @@
           </tbody>
         </table>
       </div>
-      <h2 class="fw-bold mb-4">Cotizar seguro de auto</h2>
-      <form>
-        <div class="mb-3">
-          <label for="marca" class="form-label">Marca del auto</label>
-          <input
-            type="text"
-            class="form-control"
-            id="marca"
-            name="marca"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="modelo" class="form-label">Modelo del auto</label>
-          <input
-            type="text"
-            class="form-control"
-            id="modelo"
-            name="modelo"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="año" class="form-label">Año del auto</label>
-          <input
-            type="number"
-            class="form-control"
-            id="año"
-            name="año"
-            min="1900"
-            max="2023"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="cobertura" class="form-label">Tipo de cobertura</label>
-          <select class="form-select" id="cobertura" name="cobertura" required>
-            <option value="">Selecciona una opción</option>
-            <option value="basica">Cobertura Básica</option>
-            <option value="amplia">Cobertura Amplia</option>
-            <option value="premium">Cobertura Premium</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <button type="submit" class="btn btn-primary">Cotizar</button>
-        </div>
-      </form>
+     
     </main>
     <footer>
       <div class="container">
@@ -394,6 +268,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
